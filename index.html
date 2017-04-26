@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heejin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+
+<div class="side">
+  
+</div>
+<div class="main">
+  <header class="text-center" id="home">
+    <h1 class="">Hello!<br>My name is<br><b>Heejin Kim</b></h1><br><br>
+    <p>멋쟁이사자처럼(LIKELION) 5기</p>
+    <p>이곳은 저의 자기소개 페이지입니다.</p><br><br>
+   <div class="btn-group btn-group-justified" id="myScrollspy">
+    <a href="#myphoto" class="btn btn-info btn-lg">Photo</a>
+    <a href="#profile" class="btn btn-info btn-lg">Profile</a>
+    <a href="#favorite" class="btn btn-info btn-lg">Favorite</a>
+  </div>
+  </header>
+  
+  <div class="container" id="myphoto">
+    <h2>My Photo</h2><br>
+
+    <div class="row">
+      <div class="col-sm-6 photo">
+        <img src="/image/me2.jpg" >
+        <img src="/image/me1.jpg" >
+        <img src="/image/me4.jpg" >
+      </div>
+
+      <div class="col-sm-6 photo">
+        <img src="/image/me6.jpg" >
+        <img src="/image/me3.jpg" >
+        <img src="/image/me5.jpg" >
+        <img src="/image/me7.jpg" >
+      </div>
+    </div>
+  </div>
+  
+  <div class="container" id="profile">
+    <h2>My Profile</h2><br>
+    <table class="table table-hover">
+      <tr>
+        <th>성명</th>
+        <td>김희진(Heejin Kim)</td>
+      </tr>
+      <tr>
+        <th>생년월일</th>
+        <td>1995/02/28</td>
+      </tr>
+      <tr>
+        <th>키</th>
+        <td>164.7cm</td>
+      </tr>
+      <tr>
+        <th>학력</th>
+        <td>서강대학교 수학과 재학중</td>
+      </tr>
+      <tr>
+        <th>자란 곳</th>
+        <td>경기도 화성시 동탄</td>
+      </tr>
+      <tr>
+        <th>혈액형</th>
+        <td>0형</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="container" id="favorite">
+    <h2>My favorite things</h2><br>
+    <div class="row text-center">
+      <div class="col-sm-6">
+        <div class="card text-center favorites" style="width:100%">
+          <div class="card-block jumbotron">
+            <h3 class="card-title">CAT</h3>
+          </div>
+          <img src="/image/cat.jpg" alt="Card image cap">
+          <div class="card-block">
+            <p style="padding: 30px 0px; font-size: 20px">저는 고양이를 매우 좋아합니다.<br>하지만 고양이를 키울 여건은<br>
+              되지 않아서 고양이 카페를 자주 갑니다.</p>
+          </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card text-center favorites" style="width:100%">
+          <div class="card-block jumbotron">
+            <h3 class="card-title">CALLIGRAPHY</h3>
+          </div>
+          <img src="/image/calli.jpg" alt="Card image cap">
+          <div class="card-block">
+            <p style="padding: 30px 0px; font-size: 20px">제 취미는 캘리그라피입니다.<br>손글씨를 쓰고<br>
+              그림을 그리는 것을 좋아합니다.</p>
+          </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    <div class="container text-center" style="font-size: 25px" id="contact">
+      <p><i class="fa fa-map-marker fa-fw"></i> SEOUL, KOREA</p>
+      <p><i class="fa fa-phone fa-fw"></i> Phone: 010********</p>
+      <p><i class="fa fa-envelope fa-fw"> </i> Email: mail@naver.com</p>
+    </div>
+  </div>
+  <footer class="end">
+  </footer>
+</div>
+
+
+
+
+
+<script>
+var images=new Array('/image/back1.jpg','/image/back2.jpg','/image/back3.jpg');
+var nextimage=0;
+doSlideshow();
+
+function doSlideshow(){
+    if(nextimage>=images.length){nextimage=0;}
+    $('.side')
+    .css('background-image','url("'+images[nextimage++]+'")')
+    .fadeIn(500,function(){
+        setTimeout(doSlideshow,3000);
+    });
+}
+</script>
+
+</body>
+</html>

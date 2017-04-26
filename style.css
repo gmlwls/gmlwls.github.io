@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+body, h1,h2,h3,h4,h5,h6 {font-family: 'Russo One' !important;}
+.bs-row-padding img {margin-bottom: 12px}
+.side {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+}
+
+.main {
+    width: 60%;
+    margin-left: 40%;
+}
+#home {
+    width: 100%;
+    padding:128px 50px 80px 50px;
+}
+#home > h1 {
+    letter-spacing: 10px;
+    line-height: 40px;
+    font-size: 20px;
+}
+#home > h1 > b {
+    font-size: 40px;
+}
+.container {
+    width: 90% !important;
+}
+#myphoto, #profile, #favorite, #contact {
+    margin-bottom: 70px;
+}
+.photo > img {
+    padding: 10px;
+    width: 100%;
+}
+.table {
+    height: 300px;
+}
+th, td {
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+th {
+    font-size: 18px;
+}
+td {
+    font-size: 15px;
+}
+.favorites {
+    box-shadow: 10px 10px #d3d3d3;
+}
+.favorites > img {
+    width: 100%;
+}
+.jumbotron {
+    margin-bottom: 0px !important;
+}
+.end {
+    width: 100%;
+    height: 200px;
+    background-color: #d3d3d3;
+}
